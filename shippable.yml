@@ -14,9 +14,9 @@ go:
 build:
   pre_ci:
     - echo go version is $SHIPPABLE_GO_VERSION
-    - docker tag drydock/u16golall:master drydock/u16golall:v$SHIPPABLE_GO_VERSION
+    - docker tag drydock/u14golall:master drydock/u14golall:v$SHIPPABLE_GO_VERSION
   pre_ci_boot:
-    image_name: drydock/u16golall
+    image_name: drydock/u14golall
     image_tag: v$SHIPPABLE_GO_VERSION
   ci:
     - echo go version is $SHIPPABLE_GO_VERSION
